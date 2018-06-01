@@ -1,0 +1,63 @@
+@extends('layouts.app')
+
+@section('content')
+
+    <h1 class="text-center my-5">Stock {{$product->name}}</h1>
+
+
+    <p class="mt-5">
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Plus d'informations
+        </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <div class="row">
+                <p class="col-md-4"><strong>Quantité : </strong> {{number_format($product->currentStock())}} kg</p>
+                <p class="col-md-4"><strong>Prix Unitaire : </strong> @money($product->cost)</p>
+                <p class="col-md-4"><strong>Montant : </strong> @money($product->value())</p>
+            </div>
+            <div class="row">
+                <p class="col-md-4"><strong>Transport : </strong> @money($product->transport)</p>
+                <p class="col-md-4"><strong>Droit Douane : </strong> @money($product->customs)</p>
+                <p class="col-md-4"><strong>Frais Divers: </strong> @money($product->others)</p>
+            </div>
+            <div class="row ">
+                <p class="col-md-6 text-center"><strong class="text-danger">Montant Total : </strong> @money($product->totalValue())</p>
+                <p class="col-md-6 text-danger "><strong>Coût d'Achat : </strong> @money($product->unitCost())</p>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Stock Initial</th>
+                <th scope="col">Entrée</th>
+                <th scope="col">Sortie</th>
+                <th scope="col">Stock Final</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach($product->stock as $stock)
+                
+            <tr>
+                @if($loop->first)
+                    <th scope="row">{{$product->quantity}}</th>
+                @else
+                    <th scope="row">{{$final}}</th>
+                @endif
+                @php
+                    $cumul += $stock->stock_in;
+                    $final += ($product->quantity + $cumul );
+                @endphp
+                <td>{{$stock->stock_in}}</td>
+                <td>{{$stock->stock_out}}</td>
+                <td>{{$final}}</td>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
+@endsection

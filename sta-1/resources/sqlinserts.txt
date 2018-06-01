@@ -1,0 +1,19 @@
+INSERT INTO `payements` (`id`, `contrat_id`, `client_id`, `versement`, `created_at`, `updated_at`)
+VALUES
+    (4, 3, 1, 250000, NULL, NULL),
+    (5, 3, 1, 20000, NULL, NULL);
+INSERT INTO `clients` (`id`, `nom`, `prenom`, `date_naissance`, `addresse`, `ville`, `numero_permis`, `numero_phone`, `numero_phone2`, `email`, `created_at`, `updated_at`)
+VALUES
+    (1, 'Moubamba', 'Bruno', '2017-11-10', 'Ngady', 'Port-Gentil', 'B0030300245', '07152273', '06748382', 'dariusnoutais@gmail.com', '2017-11-07 00:45:39', '2017-11-07 00:45:39');
+INSERT INTO `contrats` (`id`, `client_id`, `voiture_id`, `caution`, `date_retour_prevue`, `date_retour_reelle`, `created_at`, `updated_at`)
+VALUES
+    (3, 1, 1, 100000, '2017-11-16 00:00:00', '1000-11-23 00:00:00', '2017-11-07 02:51:54', '2017-11-07 02:51:54'),
+    (4, 1, 2, 100000, '2017-11-10 00:00:00', '1000-11-23 00:00:00', '2017-11-07 10:40:07', '2017-11-07 10:40:07'),
+    (5, 1, 2, 100000, '2017-11-24 00:00:00', '1000-11-23 00:00:00', '2017-11-07 10:43:05', '2017-11-07 10:43:05');
+INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`, `password`, `role_id`, `remember_token`, `created_at`, `updated_at`)
+VALUES
+    (1, 'Derrick', 'Noutais', 'derricknoutais@gmail.com', '$2y$10$4Ka0LPrNhsvsyvcZrKjTau1/r7htKQzZTzweoP/mo8mxSLgXuFOWa', 1, NULL, '2017-11-05 13:07:51', '2017-11-05 13:07:51');
+INSERT INTO `voitures` (`id`, `immatriculation`, `marque`, `type`, `prix`, `date_expiration_assurance`, `date_expiration_carte_grise`, `date_expiration_visite_technique`, `date_expiration_carte_extincteur`, `etat_voiture`, `pneu_secours`, `crick`, `boite_pharmacie`, `triangle`, `calle_metallique`, `cle_roue`, `gilet`, `baladeuse`, `disponibilite`, `created_at`, `updated_at`)
+VALUES
+    (1, 'FZ-333-BB', 'Toyota', 'Corolla', 30000, '2017-11-17', '2017-11-24', '2017-11-18', '2017-11-16', 'jkhgligujyfukyfuytfhgdfjhgdf', 1, 1, 1, 1, 1, 1, 1, 1, 0, '2017-11-07 01:05:11', '2017-11-07 11:00:28'),
+    (2, 'FZ-335-AA', 'Toyota', 'Corolla', 30000, '2017-11-17', '2017-11-24', '2017-11-18', '2017-11-16', 'jkhgligujyfukyfuytfhgdfjhgdf', 1, 1, 1, 1, 1, 1, 1, 1, 0, '2017-11-07 01:05:11', '2017-11-07 10:43:05');

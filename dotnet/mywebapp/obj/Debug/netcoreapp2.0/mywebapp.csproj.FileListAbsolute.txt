@@ -1,0 +1,11 @@
+/Users/derricknoutais/Sites/dotnet/mywebapp/bin/Debug/netcoreapp2.0/mywebapp.deps.json
+/Users/derricknoutais/Sites/dotnet/mywebapp/bin/Debug/netcoreapp2.0/mywebapp.runtimeconfig.json
+/Users/derricknoutais/Sites/dotnet/mywebapp/bin/Debug/netcoreapp2.0/mywebapp.runtimeconfig.dev.json
+/Users/derricknoutais/Sites/dotnet/mywebapp/bin/Debug/netcoreapp2.0/mywebapp.dll
+/Users/derricknoutais/Sites/dotnet/mywebapp/bin/Debug/netcoreapp2.0/mywebapp.pdb
+/Users/derricknoutais/Sites/dotnet/mywebapp/obj/Debug/netcoreapp2.0/mywebapp.csprojAssemblyReference.cache
+/Users/derricknoutais/Sites/dotnet/mywebapp/obj/Debug/netcoreapp2.0/mywebapp.csproj.CoreCompileInputs.cache
+/Users/derricknoutais/Sites/dotnet/mywebapp/obj/Debug/netcoreapp2.0/mywebapp.AssemblyInfoInputs.cache
+/Users/derricknoutais/Sites/dotnet/mywebapp/obj/Debug/netcoreapp2.0/mywebapp.AssemblyInfo.cs
+/Users/derricknoutais/Sites/dotnet/mywebapp/obj/Debug/netcoreapp2.0/mywebapp.dll
+/Users/derricknoutais/Sites/dotnet/mywebapp/obj/Debug/netcoreapp2.0/mywebapp.pdb

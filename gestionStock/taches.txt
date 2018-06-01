@@ -1,0 +1,21 @@
+Enlever Cout D'Achat
+
+Mettre P.U
+
+Ajouter :
+    Champ Cout de Douane
+
+    Champ Cout de Transport
+
+    Champ Cout Divers
+
+    Bouton Finaliser
+
+
+Enlever DB Customs & Transport et Ajouter a DB ProductOrder
+
+Quand On Valide Rediriger vers : Bon
+
+Augmenter Stock
+
+
