@@ -13,10 +13,6 @@
     </head>
     <body>
         <div id="app">
-            @{{message}}
-            <b-alert show>Default Alert</b-alert>
-            <div class="col-md-4">
-<b-form-file v-model="file" :state="Boolean(file)" placeholder="Choose a file..."></b-form-file>
 
             </div>
         </div>
